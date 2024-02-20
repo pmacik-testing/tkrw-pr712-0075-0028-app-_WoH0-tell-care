@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bdod
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0028-tenant/tkrw-pr712-0075-0028-app/devfile-sample-bdod@sha256:0cbb7be8f278fe6daf83934d9c716b8f9f9c3ba14a809edb66c15fd0340a14b6
+        name: my-nodejs
+        resources: {}
+status: {}
